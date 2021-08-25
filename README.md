@@ -1,136 +1,50 @@
-[![Pursuit Logo](https://avatars1.githubusercontent.com/u/5825944?s=200&v=4)](https://pursuit.org)
-
 # CSS Selectors Lab
 
-## Getting Started
+# Introductory CSS Lab
 
-- Fork this repo
-- Clone the forked repository
-- `cd` to the directory where you cloned it
-- `npm install` to install dependencies
-- `npm test` to open the cypress window
+In this lab, you'll have the opportunity to design a personal webpage. The content already exists -- you just need to style it to the best of your ability!
 
-> _Note_: Remember to `git add`, `git commit` and `git push` regularly
+---
 
-## Submission Guidelines
+## Lab Setup
 
-- When finished, commit and push your work.
-- Make a pull request on github.`
-- Submit the link to your pull request on Canvas.
+### Getting started
 
-This repo has an `about.html` file inside of it, as well as a `styles.css` file. Edit the HTML and CSS files to implement the changes below.
+1. Fork and clone this repository.
 
-<details>
-<summary>HTML</summary>
+1. Navigate to the cloned repository's directory on your command line. Then, run the following command:
 
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>CSS Intro</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Your Name Here</h1>
-    <div>
-      <p>
-        This is a bunch of information about myself. I'm from here and there and
-        discovered my love of programming when this happened. When I'm not
-        working I'm busy doing this and that.
-      </p>
-    </div>
+   ```
+   npm install
+   ```
 
-    <img
-      src="https://www.breakthrough-pt.com/wp-content/uploads/2014/11/female-default-profile-photo.png"
-      alt=""
-    />
+   This will install the libraries needed to run the tests.
 
-    <div>
-      <h2>Here are some of my Skills!</h2>
+1. Open up the repository in VSCode. Follow the instructions below to complete the Lab.
 
-      <h3>Languages</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>SQL</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-      </ul>
+### Tests
 
-      <h3>Libraries</h3>
-      <ol>
-        <li>React</li>
-        <li>PostgreSQL</li>
-        <li>Node</li>
-        <li>Bootstrap</li>
-      </ol>
-    </div>
+To run the tests, you can run the following command from the command line. You will need to be in the root directory of your local directory.
 
-    <div>
-      <h2>Hardest Bug So Far</h2>
-      <p>
-        My hardest bug I ever came across was this infinite loop I couldn't
-        escape.
-      </p>
-      <p>I came up with a totally sick solution though by doing ...</p>
-    </div>
-
-    <h2>Contact Me</h2>
-    <div>
-      Email me at:
-      <a href="mailto:hello@pursuit.org" target="_top">hello@pursuit.org</a>
-    </div>
-
-    <ul>
-      <li><a href="https://github.com">github link</a></li>
-      <li><a href="https://linkedin.com">LinkedIn link</a></li>
-      <li><a href="https://angellist.com">Angel list link</a></li>
-      <li><a href="https://pursuit.org">Pursuit link</a></li>
-    </ul>
-
-    <form action="index.html" method="post">
-      <input type="text" name="" value="" />
-      <input type="submit" name="submit" value="submit" />
-    </form>
-  </body>
-</html>
+```
+npm test
 ```
 
-</details>
+This will open the Cypress testing window, where you can click to run an individual suite of tests or all of the tests at once.
+
+## Instructions
+
+To complete the tests in this lab, you will need to add the following styles. If you're unclear about any of the instructions below, remember that you can check the test file to see what exactly is being tested.
+
+- [ ] Set all paragraph text to have a font of `Helvetica, sans-serif`.
+- [ ] Set all headings to have a font of `George, serif`.
+- [ ] The profile photo should have a class of `profile-photo`. Then, update your CSS so that any element with the `profile-photo` class has a `blue` border that has a `1px` width.
+- [ ] Align all text within the `body` element to be in the center of the page.
+- [ ] Update the style of all headings so that they are bold and have an blue underline. Note that an underline _is not_ the same as a border.
+- [ ] Add a class of `skills-header` to the relevant `h2` element. Then, update your CSS so that any element with a `skills-header` class has the color `rebeccapurple`.
+- [ ] Change all links on the page so that they show up `red`.
+- [ ] The unordered list underneath the "Languages" heading should include a class of `languages-list`. Then, style all lists that have that class to have a `list-style-image` property with the value being the [globe](./assets/globe.png) image stored in the `assets/` folder.
+
+Once you've completed these tasks, continue to style your page. Consider adding specific styles to all list items, only list items under the "Libraries" heading, the introductory paragraph, and the "Hardest Bug So Far" section.
 
 ![styledpage](./styled_page.png)
-
-## CSS changes:
-
-- Assign a class named `important` to all header tags and make them all underlined and bold.
-- Give the h2 header with the text "Here are some of my Skills!" a unique id `skills-header` and make turn it RebeccaPurple in color.
-- All links that end in .com should be the color green after the link is visited.
-- Give the unordered list of links a class name of `links-list` and make it have a 🌐 symbol (`https://github.githubassets.com/images/icons/emoji/unicode/1f310.png`) as a bullet point.
-- In all ordered lists change only the last child element to be bold.
-- Give <a> elements with an href ending ".com" a hover effect of turning red.
-- Give all other <a> elements with an href a hover effect of turning orange.
-- Center all text inside the body.
-- Give your languages unordered list an id of `language-list`, and change its font to be in italics.
-- Make the second p tag in the div have the a background-color of rgba(0,0,0,.5).
-
-## Extra problems from w3school
-
-### Combinators
-
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators2
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators3
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4
-
-### Pseudo-classes
-
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes1
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes2
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes3
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes4
-
-### Pseudo-elements
-
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_elements1
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_elements2
-- https://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_elements3
