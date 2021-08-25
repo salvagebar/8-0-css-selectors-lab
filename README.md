@@ -1,7 +1,5 @@
 # CSS Selectors Lab
 
-# Introductory CSS Lab
-
 In this lab, you'll have the opportunity to design a personal webpage. The content already exists -- you just need to style it to the best of your ability!
 
 ---
@@ -45,6 +43,8 @@ To complete the tests in this lab, you will need to add the following styles. If
 - [ ] Change all links on the page so that they show up `red`.
 - [ ] The unordered list underneath the "Languages" heading should include a class of `languages-list`. Then, style all lists that have that class to have a `list-style-image` property with the value being the [globe](./assets/globe.png) image stored in the `assets/` folder.
 
-Once you've completed these tasks, continue to style your page. Consider adding specific styles to all list items, only list items under the "Libraries" heading, the introductory paragraph, and the "Hardest Bug So Far" section.
+Once your complete with the above tasks, your page should look something like the image below.
 
-![styledpage](./styled_page.png)
+![Completed lab image.](./assets/styled-page.png)
+
+Once you've completed these tasks, continue to style your page. Consider adding specific styles to all list items, only list items under the "Libraries" heading, the introductory paragraph, and the "Hardest Bug So Far" section.
