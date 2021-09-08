@@ -10,7 +10,7 @@ describe("Styling", () => {
       });
     });
 
-    it("all headings have their font set to 'Gerogia, serif'", () => {
+    it("all headings have their font set to 'Georgia, serif'", () => {
       cy.get("h1, h2, h3, h4, h5, h6").each((paragraph) => {
         cy.wrap(paragraph).should("have.css", "font-family", "Georgia, serif");
       });
