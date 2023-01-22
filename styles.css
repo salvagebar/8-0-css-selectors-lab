@@ -17,6 +17,18 @@ h1, h2, h3, h4, h5, h6 {
 body {
   text-align: center;
 }
+
+.skills-header {
+  color: rebeccapurple;
+}
+
+a {
+  color: red;
+}
+
+.languages-list {
+  list-style-image: url("./assets/globe.png");
+}
 /* Do not change any CSS below this line. */
 h1 {
   color: blue;
